@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<TITLE>VBOpenGL type library v1.2</TITLE>
+<style>
+BODY {
+	margin-left: 30px;
+	margin-right: 30px;
+	font: 10pt;
+	color: #FFFFFF; 
+	font-family: Verdana;
+	padding: 8 10% 0 10%;
+	text-align: justify;
+	}
+DIV{ color:white;
+	font-family:"Verdana";
+	}
+IMG {
+	border:0;
+	border-style:none;
+	text-decoration: none;
+	}
+I{
+	color: rgb(200,255,200);
+	}
+LI { 
+	margin-left: 10px ;
+	font: 10pt/13pt "Arial";
+	}		
+A   {
+	border:0;
+	border-style:none;
+	border-width:none;
+	text-decoration: none
+	}
+A:link {
+	color: rgb(155,225,255); 
+	text-decoration: none
+	}
+
+A:visited { 
+	color: rgb(225,225,225); 
+	text-decoration: none
+	}   
+A:active {
+	color: rgb(100,200,255); 
+	text-decoration: none
+	}
+A:hover	{
+	color: rgb(0,200,255); 
+	text-decoration: none
+	}
+</style>
+
+
+</HEAD>
+
+
+<BODY bgcolor=#424242 text=#000000>
+<DIV STYLE="position:absolute;left:120;top:80;width:600;">
+<H1>VBOpenGL type library v1.2</H1>
+Version 1.2 of the type library is a consolidation of Patrice Scribe's
+'Microsoft OpenGL Type Library 1.1' and the previous versions of VBOpenGL.tlb.
+<BR>
+<BR>
+There are 2 sets of OpenGl dlls, one from Microsoft and one from SGI. The 
+first file is for Microsoft, the second for SGI. Unless you have installed
+the SGI implementation of OpenGL, you should use the type library for the 
+Microsoft dlls. 
+<BR><BR>
+[What's the difference? I don't use the SGI dlls, but it is said by those who 
+do that SGI is faster in some circumstances. Specifically, if you don't have
+hardware acceleration and you use textures or large screen resolutions, SGI 
+may be dramatically faster. ALL the code on this site uses the MS implementation
+because SGI does not support the SGI implementation any longer. If you are beginning
+with OpenGL and you want to use the sample code on this site, download the type 
+library for the MS dlls only.]
+<BR>
+<BR>
+<A HREF="bin/vbogl12.zip"> 
+<IMG SRC="images/download.gif" HEIGHT=16 WIDTH=16>Download VBOpenGL 1.2 for Microsoft</A> 
+(approx. 180K)
+<BR><BR>
+
+<BR>
+
+<A HREF="bin/sgi.zip"> 
+<IMG SRC="images/download.gif" HEIGHT=16 WIDTH=16>Download VBOpenGL 1.2 for SGI</A> 
+(approx. 180K)
+<BR><BR>
+
+
+<H3>Installation:
+</H3><P>
+Expand the zip file and move 'vbogl.tlb' to a directory where you intend to leave it.
+You must register the type library before you can use it. You can do this 
+with regsvr32.exe, or by running VB and adding a reference to the type 
+library by selecting 'Project | References...', then 'Browse', then the tlb 
+file. You will then be able to use the Object Browser to examine the library 
+and call OpenGL functions from code.
+<P>
+<BR>
+<HR>
+<BR>
+Both of the type libraries above include a lot of declarations of Win32 functions.
+If you already use another Win32 type library and want to use just the OpenGL
+modules, you can download the following version, which is the same as the above
+Microsoft type library, but with the Win32 modules removed. Note that to use 
+glxCtl and all the samples on this site you should use one of the type libraries 
+above, not this one - otherwise you will have to add API declarations to all the
+sample code. Note also that this version is for the MS dlls. 
+<BR>
+
+<BR>
+<A HREF="bin/vbogl.zip"> 
+<IMG SRC="images/download.gif" HEIGHT=16 WIDTH=16>VBOpenGL 1.2 - OpenGL only</A> 
+(approx. 90K)
+<BR><BR>
+<HR>
+<BR>
+<H3>About GLUT:
+</H3><P>
+The type library includes declarations for GLUT 3.6. You can for example 
+call glutWireSphere and VB will load glut and you will get a wire sphere.
+However, I neglected to do an SGI-specific version of GLUT, so if you use
+the SGI type libraries, beware of this. If you need GLUT functionality, it
+would generally be better to consult the GLUT source code and port it to VB
+than to load GLUT, but that's just my opinion. 
+<P>
+<H3>About Type Libraries:
+</H3><P>
+A type library effectively adds any dll to 
+the native VB language. If you want to see the code for this or any other 
+type library, you can run the latest version of OLEView, included in the SDK tools.
+It will re-generate the source code from the type library. You can use type 
+libraries to '#include' 3rd party dlls and even VB code - see the 'StereoView'
+sample for an example.
+
+<P>
+<BR>
+<BR>
+<br><br>
+<B><font face="Arial" size=2>
+Please send suggestions, bug reports, and such to:
+<a href="mailto:edx@hk.super.net">edx@hk.super.net</a>
+</font>
+<DIV >
+<HR>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=4 height=4></td>
+<td width=551></td>
+<td width=4></td>
+</tr>
+<tr>
+<td height=34></td>
+<td width=551 height=34 valign=top align=left>
+<p align=center><center><B><font face="Arial" size=2>
+<a href="contents.htm">Home Page</a></B></font>
+<B><font face="Arial" size=2>&nbsp;  &#124;&nbsp;  
+<a href="page3.html">Related Sites</a></center></p></B></font>
+</td>
+<td></td>
+</tr>
+          <tr>
+            <td height=4></td>
+            <td colspan=2></td>
+          </tr>
+        </table>
+</DIV>
+
+
+
+
+
+
+</BODY>
+</HTML>
+
